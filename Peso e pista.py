@@ -9,13 +9,13 @@ w=[] # array com varios pesos
 # trações máximas para cada helices
 helicer=[15.30818*0.7,28.14509*0.7,23.76151*0.7] #12x8 , 13x6.5 , 13x4 RIMFIRE
 
-g=9.81 
-p=1.225
-s=0.454
-clmax=0.561495
-cd=0.01511
-u=0.03
-arw= 11.35 
+g=9.81 # gravidade
+p=1.225#
+s=0.454# área 
+clmax=0.561495#
+cd=0.01511 #
+u=0.03 # coeficiente de atrito
+arw= 11.35 # razão de aspecto
 v0=10 # VELOCIDADE INICIAL
 d= 0.5*p*(v0*v0)*s*cd # ARRASTO
 l= 0.5*p*(v0*v0)*s*clmax # SUSTENTAÇÃO
@@ -25,7 +25,7 @@ def calculo(w1,t): # calculo do Sl0
 	return(temp)
     
 for i in range(10,50):
-	w.append(i) # de 100N ate 500N	
+	w.append(i) # de 10N ate 50N	
 
 for j in range(0,3): # diz qual helice 
 	for i in range(0,40):
